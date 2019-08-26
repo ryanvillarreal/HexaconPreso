@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Hexacon v2.0</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background-image="./img/hexacon.png" data-background-size=100%>
+					<h3>Building a Better WiFi Pineapple</h3>
+					<h4>With Open Source Tools</h4>
+				</section>
+
+				<section data-background-image="./img/background1.png" data-background-size=97%>
+					<section color="black !important">
+					<h5>$ awk -F':' '{print $1}' /etc/passwd | grep Ryan</h5>
+					<p>
+						<h6>
+						I am Ryan Villarreal, and I have been with Coalfire for about 8 months now.  I have been a pentester for around 4 years now. </h6>
+					</p>
+					</section>
+					<section>
+						<h6>I have done <q>at least</q> 2 wireless penetration tests, but I am a hobbyist wireless nerd. 
+						<p>(Notice I did not say expert.)</p></h6>
+					</section>
+					<section>
+						<h5>So if you aren't an expert why are you giving this talk?</h5>
+						<p><h6>
+							I am trying to bring awareness to the wireless community that an unamed <s>Hak5</s> company kinda sucks...
+						</p></h6>
+					</section>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section data-background-image="./img/background2.png" data-background-size=97% color="black !important;">
+					<section>
+						<h5>WiFi Pineapple</h5>
+						<h6>
+						<p>We will be focusing on the WiFi pineapple through this presentation, however if you think other Hak5 products suck feel free to let me know why. </p></h6>
+					</section>
+					<section>
+						<h6>
+						<p>Hak5 is a company who totes having the 'TOP PENTEST DEVICES'</p>
+						<img src="./img/top.pentest.devices.hak5.png"></h6>
+					</section>
+					<section>
+						<h2>But what makes them the Top Pentest Devices?</h2>
+						<p>The claim is that the PineAP is a highly effective rogue access point suite for the WiFi Pineapple. Building on the simple probe request and response nature of Karma, PineAP takes the attack to the extreme. </p>
+						<p>(Their words, not mine)</p>
+						<br>
+					</section>
+					<section>
+						Let's take a little look behind the mask
+					</section>
+					<section>
+						<img height="100%" width="50%" src="./img/scooby.reveal.meme.jpg">
+					</section>
+				</section>
+
+				<section data-background-image="./img/background1.png" data-background-size=97%>
+					<section>
+						<p>
+							I'm not saying Airmon-ng is a bad tool, i'm just saying it is dated. 
+						</p>
+					</section>
+					<h2>Slides</h2>
+
+				</section>
+
+				<section data-background-image="./img/background2.png" data-background-size=97%>
+					<h2>Point of View</h2>
+					<p>
+						Press <strong>ESC</strong> to enter the slide overview.
+					</p>
+					<p>
+						Hold down the <strong>alt</strong> key (<strong>ctrl</strong> in Linux) and click on any element to zoom towards it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Click again to zoom back out.
+					</p>
+					<p>
+						(NOTE: Use ctrl + click in Linux.)
+					</p>
+				</section>
+
+				<section data-markdown data-background-image="./img/background1.png" data-background-size=97%>
+					<script type="text/template">
+						## Markdown support
+
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+						```
+						<section data-markdown>
+						  ## Markdown support
+
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+				</section>
+
+				<section data-background-image="./img/background2.png" data-background-size=97%>
+					<section id="fragments">
+						<h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p>
+							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
+							<span style="display: inline-block;" class="fragment fade-up">up, </span>
+							<span style="display: inline-block;" class="fragment fade-down">down, </span>
+							<span style="display: inline-block;" class="fragment fade-left">left</span>
+						</p>
+						<p class="fragment fade-in-then-out">fade-in-then-out</p>
+						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
+						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+					</section>
+				</section>
+
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+						import React, { useState } from 'react';
+
+						function Example() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    &lt;div&gt;
+						      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+						      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+						        Click me
+						      &lt;/button&gt;
+						    &lt;/div&gt;
+						  );
+						}
+					</div>
+				</div>
+
+		<script src="js/reveal.js"></script>
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
