@@ -1,14 +1,10 @@
 <!doctype html>
 <html lang="en">
-
 	<head>
-		<meta charset="utf-8">
-
+		<meta charset=utf-8>
 		<title>Hexacon v2.0</title>
-
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
-
+		<meta name="author" content="R to the V">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
@@ -46,8 +42,23 @@
 					<h4>With Open Source Tools</h4>
 				</section>
 
+				<section data-background-image="./img/hexacon.png" data-background-size=100%>
+				<section>
+					<h4>
+						<p>
+							<ol>
+								<li>What is a Pineapple?</li>
+								<li>Why does it need to be better?</li>
+								<li>Hardware Limitations</li>
+								<li>Software Limitations</li>
+								<li>Alterantives</li>
+							</ol>
+						</p></h4>
+					</section>
+				</section>
+
 				<section data-background-image="./img/background1.png" data-background-size=97%>
-					<section color="black !important">
+					<section>
 					$ awk -F':' '{print $1}' /etc/passwd | grep Ryan
 					<p>
 						I am Ryan Villarreal, and I have been with Coalfire for about 8 months now.  I have been a pentester for around 4 years now.
@@ -60,28 +71,74 @@
 					<section>
 						So if you aren't an expert why are you giving this talk?
 						<p>
-							I am trying to bring awareness to the wireless community that an unamed <s>Hak5</s> company kinda sucks...
+							I really enjoy all things wireless, and I'm trying to get better at it.
 						</p>
 					</section>
+				</section>
+
+				<section data-background-image="./img/background1.png" data-background-size=97%>
+						<section>
+						What is a Pineapple?
+						</section>
+						<section>
+							Nano vs. Tetra
+							<img src="./img/versus.png">
+						</section>
+						<section>
+							Tetra - Hardware
+							<ul>
+								<li>Dual Band 2.4/5 GHz - 533 MHz Network SoC</li>
+								<li>Four Long Range Antennas - up to 800mW per radio</li>
+								<li>2 GB NAND Flash</li>
+								<li>USB Ethernet, USB Serial,USB Host and Ethernet Ports </li>
+							</ul>
+						</section>
+						<section>
+							Nano - Hardware
+							<ul>
+								<li>Single Band 2.4 GHz - 400 MHz Network SoC</li>
+								<li>Two Standard Antennas - up to 400mW per radio</li>
+								<li>MicroSD Card Expansion</li>
+								<li>USB Ethernet Plug, USB Host Port</li>
+							</ul>
+						</section>
+				</section>
+
+				<section data-background-image="./img/background1.png" data-background-size=97%>
 					<section>
-						Contents<p>
-							<ol>
-								<li>What is a Pineapple?</li>
-								<li>Why does it need to be better?</li>
-								<li>Hardware Limitations</li>
-								<li>Software Limitations</li>
-								<li>Alterantives</li>
-							</ol>
+					Pineapple - Software <p>
+					So the Nano and the Tetra have slight differences in the firmware.  However, both are based off of OpenWRT. 
+					</section>
+					<section>
+					What all can the Pineapple do?
+					</section>
+					<section>
+						<img src="./img/menu.PNG">
+					</section>
+					<section>
+						<img src="./img/whatitdo.png">
+					</section>
+					<section>
+						<img src="./img/confused.png" height="70%" width="70%">
+					</section>
+					<section>
+						<img src="./img/ohokay.png">
+					</section>
+					<section>
+						So here is what we need to be able to do...
+						<ul>
+							<li>mitm framework</li>
+							<li>capture wireless beacons</li>
+							<li>capture handshakes</li>
+							<li>not blast the entire wireless space</li>
+						</ul>
 					</section>
 				</section>
 
 				<!-- Example of nested vertical slides -->
-				<section data-background-image="./img/background2.png" data-background-size=97% color="black !important;">
+				<section data-background-image="./img/background2.png" data-background-size="97%">
 					<section>
-						WiFi Pineapple
-						<p>We will be focusing on the WiFi pineapple through this presentation, however if you think other Hak5 products suck feel free to let me know why. </p>
-					</section>
-					<section>
+						Why Does it Need to Better?
 						<p>Hak5 is a company who totes having the 'TOP PENTEST DEVICES'</p>
 						<img src="./img/top.pentest.devices.hak5.png">
 					</section>
@@ -92,7 +149,7 @@
 						<br>
 					</section>
 					<section>
-						Let's take a little look behind the mask
+						Let's take a little look behind the mask. 
 					</section>
 					<section>
 						<img height="100%" width="50%" src="./img/scooby.reveal.meme.jpg">
@@ -105,113 +162,35 @@
 					</section>
 				</section>
 
-				<section data-background-image="./img/background1.png" data-background-size=97%>
+				<section data-background-image="./img/background2.png" data-background-size="97%">
 					<section>
-						<p>
-							I'm not saying Airmon-ng is a bad tool, i'm just saying it is dated. 
-						</p>
+					How Open Source Tools can help use do it better. 
 					</section>
 					<section>
-							I'm not saying we should reinvente the wheel.  I simply think that a wrapper for airmon-ng isn't the best choice. 
+					Enter Bettercap, the better ettercap
+					<br>
+					<img src="./img/bettercap.logo.png">
 					</section>
+
 				</section>
 
-				<section data-background-image="./img/background2.png" data-background-size=97%>
-					<h2>Point of View</h2>
+				<section data-background-image="./img/background2.png" data-background-size="97%">
+					Future Work
+					<ul>
+						<li>Improve upon Bettercap Automation.</li>
+						<li>Build a better singleboard wireless pentesting tool.</li>
+						<li>Continue reverse engineering the PineAP.</li>
+					</ul>
 					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down the <strong>alt</strong> key (<strong>ctrl</strong> in Linux) and click on any element to zoom towards it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Click again to zoom back out.
-					</p>
-					<p>
-						(NOTE: Use ctrl + click in Linux.)
-					</p>
+					If anyone wants to help.  Hit me up.
 				</section>
 
-				<section data-markdown data-background-image="./img/background1.png" data-background-size=97%>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section data-background-image="./img/background2.png" data-background-size=97%>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p>
-							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
-							<span style="display: inline-block;" class="fragment fade-up">up, </span>
-							<span style="display: inline-block;" class="fragment fade-down">down, </span>
-							<span style="display: inline-block;" class="fragment fade-left">left</span>
-						</p>
-						<p class="fragment fade-in-then-out">fade-in-then-out</p>
-						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
-						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
-						import React, { useState } from 'react';
-
-						function Example() {
-						  const [count, setCount] = useState(0);
-
-						  return (
-						    &lt;div&gt;
-						      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-						      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-						        Click me
-						      &lt;/button&gt;
-						    &lt;/div&gt;
-						  );
-						}
-					</div>
-				</div>
+				<section data-background-image="./img/background2.png" data-background-size="97%">
+				Sources and Inspiration
+			</section>
 
 		<script src="js/reveal.js"></script>
 		<script>
-
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
@@ -231,7 +210,6 @@
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
-
 		</script>
 
 	</body>
