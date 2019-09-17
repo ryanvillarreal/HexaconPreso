@@ -78,6 +78,7 @@ body {
   text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; 
+  font-size: 10px;
 
 }
 
@@ -88,7 +89,7 @@ body {
   margin: 20px 0;
   line-height: 1.3; }
 
-/* Ensure certain elements are never larger than the slide itself */
+/* Enh6sure certain elements are never larger than the slide itself */
 .reveal img,
 .reveal video,
 .reveal iframe {
