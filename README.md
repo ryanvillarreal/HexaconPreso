@@ -9,11 +9,19 @@ docker run -dit --name webserver -p 80:80 -v $(pwd):/usr/local/apache2/htdocs/ h
 chmod +x ./setup.sh && ./setup.sh
 
 ## Overall Story Mode of the Preso
-1. What is a WiFi Pineapple
-	* 
-	* Firmware/OpenWRT
-	* Nano - Hardware
+1. Title
+2. Outline
+3. Whoami
+5. What is a WiFi Pineapple
 	* Tetra - Hardware
+	* Nano - Hardware
+6. Hardware Limitations
+
+
+
+
+
+
 2. Why does it suck?
 	* OpenWRT
 	* Wrapper class
