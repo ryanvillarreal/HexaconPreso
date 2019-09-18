@@ -1,0 +1,19 @@
+OpenSSL 1.1.1c  28 May 2019
+built on: Sat Aug 10 18:53:54 2019 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: mips-openwrt-linux-musl-gcc -fPIC -pthread -mabi=32 -Wa,--noexecstack -Wall -O3 -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -msoft-float -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -fpic -ffunction-sections -fdata-sections -znow -zrelro -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_BN_ASM_MONT -DSHA1_ASM -DSHA256_ASM -DAES_ASM -DNDEBUG -DOPENSSL_PREFER_CHACHA_OVER_GCM -DOPENSSL_SMALL_FOOTPRINT
+The 'numbers' are in 1000s of bytes per second processed.
+type             16 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes  16384 bytes
+md5               6858.66k    19260.44k    37240.74k    50337.36k    54365.64k    54774.99k
+sha1              5437.41k    13986.75k    25918.37k    32885.29k    36187.00k    35529.70k
+des cbc           4753.53k     4899.29k     5050.83k     5006.22k     5052.73k     5000.15k
+des ede3          1752.72k     1802.43k     1804.71k     1794.09k     1774.93k     1796.17k
+aes-128 cbc       7949.47k     9356.87k     9600.29k     9682.49k     9786.96k     9618.59k
+aes-192 cbc       7212.82k     7991.85k     8299.33k     8301.08k     8409.46k     8400.64k
+aes-256 cbc       6440.76k     7184.20k     7339.79k     7482.16k     7516.63k     7452.49k
+sha256            2975.98k     7001.34k    12176.52k    15296.43k    16064.60k    16032.49k
+sha512             644.14k     2522.14k     3438.69k     4680.88k     5269.29k     5251.28k
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.111625s 0.002832s      9.0    353.1
+                  sign    verify    sign/s verify/s
+dsa 2048 bits 0.037490s 0.035538s     26.7     28.1

@@ -50,10 +50,12 @@
 
 				<section data-background-image="./img/background1.png" data-background-size=97%>
 					<section>
-					$ awk -F':' '{print $1}' /etc/passwd | grep Ryan
-					<p>
-						I am Ryan Villarreal, and I have been with Coalfire for about 8 months now.  I have been a pentester for around 4 years now.
+					$ awk -F':' '{print $1}' /etc/passwd | grep -i "Ryan"<p>
+					$ <span class="red">ryan_villarreal</span>
 					</p>
+					</section>
+					<section>
+						I am Ryan Villarreal, and I have been with Coalfire for about 8 months now.  I have been a pentester for around 4 years now.
 					</section>
 					<section>
 						I have done <q>at least</q> 2 wireless penetration tests, but I am a hobbyist wireless nerd. 
@@ -62,15 +64,18 @@
 					<section>
 						So if you aren't an expert why are you giving this talk?
 						<p>
-							I really enjoy all things wireless, and I'm trying to get better at it.
+						I really enjoy all things wireless, and I'm trying to get better at it.
 						</p>
 					</section>
 					<section>
 						also I'm not a huge fan of Hak5, I have been burned in the past on Wireless engagements trying to use their hardware/software. 
 					</section>
+					<section>
+						<img src="./img/why.jpg">
+					</section>
 				</section>
 
-				<section data-background-image="./img/background1.png" data-background-size=97%>
+				<section data-background-image="./img/background2.png" data-background-size=97%>
 						<section>
 						What is a Pineapple?
 						</section>
@@ -129,24 +134,32 @@
 						<section>
 							<img src="./img/anker.purchase.PNG">
 						</section>
-
+						<section>
+							<img width="40%" height="40%" src="./img/nano.jpg">
+						</section>
+						<section>
+							<img src="./img/no.5ghz.PNG">
+						</section>
 				</section>
 
-				<section data-background-image="./img/background1.png" data-background-size=97%>
+				<section data-background-image="./img/background2.png" data-background-size=97%>
 					<section>
 					Alternatives
 					</section>
 					<section>
-						<img src="./img/pi.4.png">
+						<img width="50%" height="50%" src="./img/pi.4.png">
 					</section>
 					<section>
-						<img src="./img/pi.0.jpg">
+						<img width="50%" height="50%" src="./img/pi.0.jpg">
 					</section>
 					<section>
-						<img src="./img/zotac.pico.jpg">
+						<img width="50%" height="50%" src="./img/zotac.pico.jpg">
 					</section>
 					<section>
-						<img src="./img/odroid.jpeg">
+						<img width="50%" height="50%" src="./img/odroid.jpeg">
+					</section>
+					<section>
+						<img src="./img/gl.inet.ar.150.jpg">
 					</section>
 				</section>
 
@@ -170,6 +183,35 @@
 					<section>
 						<img src="./img/ohokay.png">
 					</section>
+				</section>
+
+				<section data-background-image="./img/background2.png" data-background-size="97%">
+
+					<section>
+						Let's take a little look behind the mask. 
+					</section>
+					<section>
+						<img height="100%" width="50%" src="./img/reveal.jpg">
+					</section>
+					<section>
+						<img src="./img/pineapd.png">
+					</section>
+					<section>
+						<img src="./img/airodump.png">
+					</section>
+					<section>
+						To be clear, I'm not saying AirCrack is a bad tool.  I'm saying this doesn't make the WiFi pineapple the best device on the market. 
+					</section>
+					<section>
+						...and then there is the crashes.
+					</section>
+					<section>
+							<img width="50%" height="50%" src="./img/crashes.PNG">
+					</section>
+				</section>
+
+
+				<section data-background-image="./img/background1.png" data-background-size="97%">
 					<section>
 						So here is what we need to be able to do...
 						<ul>
@@ -179,53 +221,132 @@
 							<li>not blast the entire wireless space</li>
 						</ul>
 					</section>
-				</section>
-
-				<section data-background-image="./img/background2.png" data-background-size="97%">
-
-					<section>
-						Let's take a little look behind the mask. 
-					</section>
-					<section>
-						<img height="100%" width="50%" src="./img/scooby.reveal.meme.jpg">
-					</section>
-					<section>
-						<img src="./img/pineapd.png">
-					</section>
-					<section>
-						<img src="./img/airodump.png">
-					</section>
-					<section>
-							<img width="50%" height="50%" src="./img/crashes.PNG">
-					</section>
-				</section>
-
-
-				<section data-background-image="./img/background2.png" data-background-size="97%">
 					<section>
 					How Open Source Tools can help
 					</section>
 					<section>
-					Enter Bettercap, the better ettercap
+					Enter bettercap, the better ettercap
 					<br>
 					<img src="./img/bettercap.logo.png">
 					</section>
-
 				</section>
 
 				<section data-background-image="./img/background2.png" data-background-size="97%">
+					<section>
+					bettercap is the Swiss Army knife for WiFi, Bluetooth Low Energy, wireless HID hijacking and Ethernet networks reconnaissance and MITM attacks.
+					</section>
+					<section>
+						<img src="./img/image-5.png">
+					</section>
+										
+					<section>
+						<img src="./img/image-6.png">
+					</section>
+
+					<section>
+						<img src="./img/image-7.png">
+					</section>
+
+					<section>
+						<img src="./img/image-9.png">
+					</section>
+
+					<section>
+						<img src="./img/image-12.png">
+					</section>
+
+					<section>
+						<img src="./img/image-13.png">
+					</section>
+
+					<section>
+						but, but, but, the Pineapple has an easy to use Web UI...
+					</section>
+
+					<section>
+						<img src="./img/webui.PNG">
+					</section>
+
+					<section>
+						<img src="./img/webui2.PNG">
+					</section>
+
+					<section>
+						Well what about WPA enterprise attacks?
+						<br>
+						<img src="./img/PineAP.Ent.PNG">
+					</section>
+					<section>
+						<img src="./img/sure.PNG">
+					</section>
+					<section>
+						<img height="90%" src="./img/yeah.okay.PNG">
+					</section>
+				</section>
+
+				<section data-background-image="./img/background2.png" data-background-size="97%">
+					<section>
+						So far this is a bunch of evidence of the Pineapple profiting off of Open Source Software, but what is the PineAP doing?
+					</section>
+					<section>
+						<img width="50%" height="50%" src="./img/pineap.help.PNG">
+					</section>
+					<section>
+						<img src="./img/ghidra.png">
+					</section>
+					<section>
+						<img src="./img/ghidra1.PNG">
+					</section>
+					<section>
+						<img src="./img/ghidra2.PNG">
+					</section>
+					<section>
+						<img src="./img/ghidra3.PNG">
+					</section>
+					<section>
+						<img src="./img/ghidra5.PNG">
+					</section>
+					<section>
+						<img src="./img/ghidra7.PNG">
+					</section>
+				</section>
+
+				<section data-background-image="./img/background2.png" data-background-size="97%">
+					<section>
+						Summary
+					</section>
+					<section>
+						<img width="50%" height="50%" src="./img/shrug.jpeg">
+					</section>
+				</section>
+
+				<section data-background-image="./img/background2.png" data-background-size="97%">
+					<section>
 					Future Work
+					</section>
+					<section>
 					<ul>
-						<li>Improve upon Bettercap Automation.</li>
+						<li>Improve upon Open Source Automation.</li>
+						<li>Find a better singleboard wireless pentesting tool.
 						<li>Build a better singleboard wireless pentesting tool.</li>
-						<li>Continue reverse engineering the PineAP.</li>
+						<li>Continue reverse engineering the PineAP. (0day anyone?)</li>
+						<li>Future Wireless standards</li>
 					</ul>
-					<p>
+					</section>
+					<section>
 					If anyone wants to help.  Hit me up.
+					</section>
 				</section>
 
-				<section data-background-image="./img/background2.png" data-background-size="97%">
-				Sources and Inspiration
+				<section data-background-image="./img/background1.png" data-background-size="97%">
+				Sources and Inspiration: <br>
+				<ul>
+					<li>https://hak5.org</li>
+					<li>Raspberry Pi Org</li>
+					<li>Bettercap Project</li>
+					<li>hostapd-wpe</li>
+					<li>My own pain and suffering</li>
+				</ul>
 				</section>
 
 				<section data-background-image="./img/background2.png" data-background-size="97%">
@@ -264,6 +385,5 @@
 				]
 			});
 		</script>
-
 	</body>
 </html>
