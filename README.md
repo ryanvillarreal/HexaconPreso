@@ -1,5 +1,6 @@
 # HexaconPreso
 Presentation for the Coalfire Hexacon Conference
+## View the PPTX file located in the root directory
 
 ## To Run this from local directory using Docker use the following command line:
 docker run -dit --name webserver -p 80:80 -v $(pwd):/usr/local/apache2/htdocs/ httpd:2.4
